@@ -1,0 +1,50 @@
+@import "theme";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@function vh($px) {
+  $vh: $px / (761 / 100);
+  @return #{$vh}vh;
+}
+
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+html {
+}
+
+header {
+    height: vh(90);
+    background-color: #888;
+}
+
+.g-gallery {
+    height: vh(246);
+}
+
+.g-main-flex-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-size: rem(12);
+}
+
+.g-team-hours {
+
+    input {
+        max-width: 146px;
+        margin-bottom: 11px;
+        font-size: rem(14);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    // p {
+    //         font-family: 'Roboto', sans-serif;
+    //
+    // }
+    li {
+        padding-left: 28px;
+    }
+}
