@@ -1,8 +1,7 @@
-@import "theme";
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-
+@import "fonts";
+@import "var";
 @function vh($px) {
-  $vh: $px / (761 / 100);
+  $vh: $px / (799 / 100);
   @return #{$vh}vh;
 }
 
@@ -11,40 +10,78 @@
   @return #{$rems}rem;
 }
 
+
 html {
 }
 
+#scroll {
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        width: 10px;
+        &::-webkit-scrollbar-thumb {
+            background-color: red;
+        }
+    }
+}
+
 header {
-    height: vh(90);
+    height: vh(91);
     background-color: #888;
 }
 
-.g-gallery {
-    height: vh(246);
+.g-gallery,
+.g-task-list {
+    height: vh(325);
 }
 
-.g-main-flex-container {
+.wrapper {
     display: flex;
-    max-width: 1000px;
+    max-width: 979px + 24px;
     margin: 0 auto;
     padding: 0 12px;
     font-size: rem(12);
 }
 
-.g-team-hours {
-
+.g-team {
+    padding: 11px;
+    background-color: $gray-98;
+    border: 1px solid $gray-80;
     input {
-        max-width: 146px;
+        max-width: 85px;
         margin-bottom: 11px;
         font-size: rem(14);
         font-family: 'Roboto', sans-serif;
     }
 
-    // p {
-    //         font-family: 'Roboto', sans-serif;
-    //
-    // }
+    ul {
+        max-height: vh(167);
+        width: 315px;
+        height: auto;
+        overflow-y: auto;
+    }
+
     li {
-        padding-left: 28px;
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: vh(12);
+
+        &::before {
+            content: url('../images/userpic.png');
+            display: block;
+            position: absolute;
+            left: 0;
+        }
+
+        p {
+            font-size: rem(12);
+
+            &:last-child {
+                font-size: rem(11);
+            }
+        }
+    }
+
+    .g-current-user p {
+        font-weight: 700;
     }
 }
