@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         HEADER HERE
     </header>
     <div class="wrapper">
@@ -19,10 +19,12 @@
             <aside>
                 <div class="g-task-list">TASKLIST HERE</div>
                 <div class="g-team">
-                    <form class="g-team__header" action="">
-                        <input type="text" name="hours" value="" placeholder="Мои часы">
-                        <span><mark> &times; 0.7 <sup class="g-tooltip"> i <span class="g-tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ut vitae hic, nisi aliquam modi.</span></sup>  = 196 </mark> / 11</span>
-                    </form>
+                    <header>
+                        <form class="g-hours-form" action="">
+                            <input type="text" name="hours" value="" placeholder="Мои часы">
+                            <span><mark> &times; 0.7 <sup class="g-tooltip"> i <span class="g-tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ut vitae hic, nisi aliquam modi.</span></sup>  = 196 </mark> / 11</span>
+                        </form>
+                    </header>
                     <div class="g-team__body">
                         <ul>
                             <li class="g-active-user">
@@ -55,51 +57,41 @@
             </aside>
             <main>
                 <div class="g-gallery">GALLERY HERE</div>
-                <div class="g-poker">
-                    <div class="g-poker-header">
+                <section class="g-poker">
+                    <header class="g-poker__header">
                         <span class="g-hours"><mark class="g-hours--gray-text">Количество часов: </mark> 0 / <mark> 1047</mark> <sup class="g-tooltip"> i <span class="g-tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ut vitae hic, nisi aliquam modi.</span></sup>
                         </span>
-                    </div>
-                    <div class="g-poker-list">
-                        <div class="g-poker-list__card g-poker-list__card--wanted-task">
+                    </header>
+                    <ul class="g-poker-list">
+                        <li class="g-poker-list__card g-wanted-task">
                             <img src="images/card.jpg" alt="Poker card.">
-                            <span> Inna </span>
-                        </div>
-                        <div class="g-poker-list__card ">
-                            <div class="g-poker-list__card--selected">
-                                <img src="images/card.jpg" alt="Poker card.">
-                            </div>
-                            <span> Dmitriy </span>
-                        </div>
-                        <div class="g-poker-list__card">
-                            <div class="g-poker-list__card--selected">
-                                <img src="images/card.jpg" alt="Poker card.">
-                            </div>
-                            <span> Vitaliy </span>
-                        </div>
-                        <div class="g-poker-list__card">
-                            <div class="g-poker-list__card--selected">
-                                <img src="images/card.jpg" alt="Poker card.">
-                            </div>
-                            <span> Aleksandr </span>
-                        </div>
-                        <div class="g-poker-list__card g-poker-list__card--wanted-task">
-                            <div class="g-poker-list__card--selected">
-                                <img src="images/card.jpg" alt="Poker card.">
-                            </div>
-                            <span> username </span>
-                        </div>
-                        <div class="g-poker-list__card">
-                            <div>
-                                <img src="images/card.jpg" alt="Poker card.">
-                            </div>
-                            <span> username </span>
-                        </div>
-                    </div>
-                    <div class="g-btn-holder">
+                            <span class="g-poker-list__username"> Inna </span>
+                        </li>
+                        <li class="g-poker-list__card ">
+                            <img src="images/card-green.jpg" alt="Poker card.">
+                            <span class="g-poker-list__username"> Dmitriy </span>
+                        </li>
+                        <li class="g-poker-list__card">
+                            <img src="images/card-green.jpg" alt="Poker card.">
+                            <span class="g-poker-list__username"> Vitaliy </span>
+                        </li>
+                        <li class="g-poker-list__card">
+                            <img src="images/card-green.jpg" alt="Poker card.">
+                            <span class="g-poker-list__username"> Aleksandr </span>
+                        </li>
+                        <li class="g-poker-list__card g-wanted-task">
+                            <img src="images/card-green.jpg" alt="Poker card.">
+                            <span class="g-poker-list__username"> username </span>
+                        </li>
+                        <li class="g-poker-list__card">
+                            <img src="images/card.jpg" alt="Poker card.">
+                            <span class="g-poker-list__username"> username </span>
+                        </li>
+                    </ul>
+                    <div class="g-poker__footer">
                         <button class="button-green" type="button" name="show-cards">Показать карты</button>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
         <footer>

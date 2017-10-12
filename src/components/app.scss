@@ -29,7 +29,7 @@ input[type='number'] {
 
 // HEADER
 
-header {
+.header {
     height: vh(91);
     background-color: #888;
 }
@@ -72,17 +72,14 @@ main {
 
 }
 
-.g-team__header {
+.g-hours-form {
     margin-bottom: 5px;
     font-size: rem(14);
     line-height: 24px;
 
     input {
         max-width: 83px;
-    }
-
-    span {
-        white-space: pre;
+        padding: 0 9px;
     }
 
     sup {
@@ -197,7 +194,7 @@ main {
     }
 }
 
-.g-poker-header {
+.g-poker__header {
     margin-bottom: 12px;
     color: $black;
     font-size: rem(16);
@@ -221,34 +218,26 @@ main {
 .g-poker-list__card {
     padding: 10px 10px 7px 10px;
 
-
     img {
         display: block;
         box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
         vertical-align: top;
     }
-
-    span {
-        display: block;
-        padding-top: 7px;
-        text-align: center;
-    }
-
-    &--#{wanted-task} {
-        background-color: #fae716;
-        box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
-    }
-
-    &--#{selected} {
-        background-color: #7ac535;
-        img {
-            opacity: 0.5;
-        }
-    }
 }
 
-.g-btn-holder {
+.g-poker__footer {
     text-align: center;
+}
+
+.g-poker-list__username {
+    display: block;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.g-wanted-task {
+    background-color: #fae716;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
 }
 
 // FOOTER
