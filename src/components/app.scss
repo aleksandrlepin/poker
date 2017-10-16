@@ -61,10 +61,13 @@ main {
 }
 
 .g-team {
-    padding: 10px 2px 0px 11px;
     background-color: $gray-98;
     border: 1px solid #ededed;
     border-radius: 3px;
+
+    header {
+        padding: 10px 2px 5px 10px;
+    }
 
     mark {
         color: $red;
@@ -73,7 +76,6 @@ main {
 }
 
 .g-hours-form {
-    margin-bottom: 5px;
     font-size: rem(14);
     line-height: 24px;
 
@@ -89,24 +91,14 @@ main {
 }
 
 .g-team__body {
-    max-height: vh(175);
+    padding-right: 2px;
+}
+
+.g-team-list {
+    padding-left: 10px;
+    padding-right: 5px;
+    height: vh(150);
     overflow-y: auto;
-
-    &::-webkit-scrollbar {
-        max-width: 10px;
-        background-color: #ededed;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        width: 8px;
-        background-color: $blue;
-        border: solid 2px #ededed;
-        border-radius: 5px;
-    }
-
-    ul {
-        padding-right: 5px;
-    }
 
     li {
         position: relative;
@@ -114,7 +106,7 @@ main {
         justify-content: space-between;
         padding-left: 30px;
         padding: 10.5px 5px 10px 30px;
-        border-bottom: solid 1px $gray-80;
+        border-bottom: solid 1px #ededed;
 
         &::before {
             content: url('../images/userpic.png');
@@ -141,6 +133,17 @@ main {
         }
     }
 
+    &::-webkit-scrollbar {
+        max-width: 10px;
+        background-color: #ededed;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: $blue;
+        border: solid 2px #ededed;
+        border-radius: 5px;
+    }
 }
 
 .g-tooltip {
@@ -156,26 +159,6 @@ main {
     border-radius: 10px;
     background-color: $gray-80;
     cursor: default;
-
-    &__text {
-        position: absolute;
-        left: -45px;
-        top: 15px;
-        z-index: 1;
-        display: inline-block;
-        visibility: hidden;
-        width: 100px;
-        padding: 5px;
-        background-color: $gray-98;
-        border: 1px solid $gray-80;
-        border-radius: 3px;
-        box-shadow: 0 0 10px 2px $gray-80;
-        text-align: left;
-    }
-
-    &:hover .g-tooltip__text {
-        visibility: visible;
-    }
 }
 
 
