@@ -1,48 +1,26 @@
 @import "fonts";
 @import "var";
 
-@function vh($px) {
-  $vh: $px / (799 / 100);
-  @return #{$vh}vh;
-}
-
-@function vw($px) {
-  $vw: $px / 12;
-  @return #{$vw}vw;
-}
-
 @function rem($px) {
   $rems: $px / 16;
   @return #{$rems}rem;
 }
 
-// RESET INPUT NUMBER BUTTONS
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input[type='number'] {
-    -moz-appearance: textfield;
-}
-
 // HEADER
-
 .header {
-    height: vh(91);
+    height: 91px;
     background-color: #888;
 }
 
 .g-gallery,
 .g-task-list {
-    height: vh(325);
+    height: 325px;
 }
 
 .wrapper {
     max-width: 997px;
-    margin: 0 auto;
     padding: 0 10px;
+    margin: 0 auto;
     font-size: rem(12);
 }
 
@@ -58,29 +36,28 @@ aside {
 
 main {
     width: 68%;
+    padding: 0 10px 0 29px;
 }
 
 .g-team {
     background-color: $gray-98;
     border: 1px solid #ededed;
-    border-radius: 3px;
 
     header {
-        padding: 10px 2px 5px 10px;
+        padding: 10px 10px 5px;
     }
 
     mark {
         color: $red;
     }
-
 }
 
-.g-hours-form {
+.g-team__form {
     font-size: rem(14);
     line-height: 24px;
 
     input {
-        max-width: 83px;
+        width: 83px;
         padding: 0 9px;
     }
 
@@ -91,47 +68,13 @@ main {
 }
 
 .g-team__body {
-    padding-right: 2px;
+    padding: 0 2px 0 0;
 }
 
 .g-team-list {
-    padding-left: 10px;
-    padding-right: 5px;
-    height: vh(150);
+    height: 175px;
+    padding: 0 5px 0 10px;
     overflow-y: auto;
-
-    li {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 30px;
-        padding: 10.5px 5px 10px 30px;
-        border-bottom: solid 1px #ededed;
-
-        &::before {
-            content: url('../images/userpic.png');
-            position: absolute;
-            left: 0;
-            top: 5px;
-            display: block;
-        }
-
-        &:last-child {
-            border: 0;
-        }
-
-        span:last-child {
-            white-space: pre-wrap;
-            font-weight: 700;
-            font-size: rem(11);
-        }
-
-        mark {
-            font-weight: 700;
-            border-left: solid 1px $gray-80;
-            border-right: solid 1px $gray-80;
-        }
-    }
 
     &::-webkit-scrollbar {
         max-width: 10px;
@@ -144,6 +87,44 @@ main {
         border: solid 2px #ededed;
         border-radius: 5px;
     }
+
+    .g-team-list__item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px 10px 30px;
+        border-bottom: solid 1px #ededed;
+
+        &::before {
+            content: url('../images/userpic.png');
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+        }
+    }
+}
+
+.g-hours-list {
+    display: flex;
+    font-size: 11px;
+
+    li {
+        margin-left: 4px;
+        font-weight: 700;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    mark {
+        display: block;
+        font-weight: 700;
+        padding: 0 4px;
+        border-left: solid 1px $gray-80;
+        border-right: solid 1px $gray-80;
+    }
 }
 
 .g-tooltip {
@@ -151,26 +132,23 @@ main {
     display: inline-block;
     width: 13px;
     height: 13px;
-    color: $gray-33;
     font-size: rem(10);
     line-height: 14px;
+    color: $gray-33;
     text-align: center;
     vertical-align: top;
-    border-radius: 10px;
-    background-color: $gray-80;
     cursor: default;
+    background-color: $gray-80;
+    border-radius: 10px;
 }
 
-
-
-.g-active-user span {
+.g-team-list__item.active span {
     font-weight: 700;
 }
 
 // POKER BLOCK
-
-.g-poker {
-    padding: 0 10px 0 29px;
+.g-formula {
+    color: $black;
 
     mark {
         color: $red;
@@ -179,32 +157,43 @@ main {
 
 .g-poker__header {
     margin-bottom: 12px;
-    color: $black;
     font-size: rem(16);
     font-weight: 500;
     line-height: 31px;
+    color: $gray-50;
     text-align: center;
     vertical-align: top;
-
-    .g-hours--gray-text {
-        color: $gray-50;
-    }
-
 }
 
 .g-poker-list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
-}
 
-.g-poker-list__card {
-    padding: 10px 10px 7px 10px;
+    &__item {
+        padding: 10px 10px 7px;
 
-    img {
+        &:hover {
+            @extend .g-poker-list__item.active;
+            cursor: pointer;
+        }
+
+        &.active {
+            background-color: #fae716;
+            box-shadow: inset 0 0 60px rgba(0, 0, 0, .3);
+        }
+
+        img {
+            display: block;
+            vertical-align: top;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, .3);
+        }
+    }
+
+    &__username {
         display: block;
-        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
-        vertical-align: top;
+        padding-top: 7px;
+        text-align: center;
     }
 }
 
@@ -212,36 +201,33 @@ main {
     text-align: center;
 }
 
-.g-poker-list__username {
-    display: block;
-    padding-top: 7px;
-    text-align: center;
-}
-
-.g-wanted-task {
-    background-color: #fae716;
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
-}
-
 // FOOTER
-
 footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 15px 0 11px 0;
-    background-color: #fafafa;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    padding: 15px 0 11px;
 }
+
+// фон футера для переноса на grid
+// footer::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: -100%;
+//     bottom: 0;
+//     left: -100%;
+//     z-index: -1;
+//     background-color: #fafafa;
+//     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+// }
 
 .g-controls {
-    @extend .wrapper;
-    display: flex;
-}
-
-.g-controls__list {
     display: flex;
     color: $gray-98;
+
+    & .active {
+        background-color: #054a8d;
+    }
 
     button {
         width: 40px;
@@ -254,44 +240,54 @@ footer {
         text-align: center;
         text-shadow: 0 0;
 
+        &:hover {
+            opacity: .85;
+        }
+
         &:last-child {
             margin-right: 0;
             background-color: $gray-25;
-        }
-
-        &:hover {
-            opacity: .85;
         }
     }
 
     input {
         @extend button;
         height: initial;
+        padding: 2px;
         border: 0;
         outline: 0;
+
+        &:hover {
+            opacity: .85;
+        }
 
         &::placeholder {
             color: $gray-98;
         }
 
-        &:hover {
-            opacity: .85;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
         }
-    }
 
-    .g-controls__list--active {
-        background-color: #054a8d;
+        &[type='number'] {
+            -moz-appearance: textfield;
+        }
     }
 }
 
 .g-controls__btn-holder {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
 
     button {
         width: 41.5%;
         margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }

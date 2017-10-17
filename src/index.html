@@ -1,122 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/app.css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <!-- <link rel='stylesheet' href='css/theme.css'> -->
+    <link rel='stylesheet' href='css/app.css'>
     <title>Poker</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class='header'>
         HEADER HERE
     </header>
-    <div class="wrapper">
-        <div class="content">
+    <div class='wrapper'>
+        <div class='content'>
             <aside>
-                <div class="g-task-list">TASKLIST HERE</div>
-                <div class="g-team">
+                <div class='g-task-list'>TASKLIST HERE</div>
+                <div class='g-team'>
                     <header>
-                        <form class="g-hours-form" action="">
-                            <input type="text" name="hours" value="" placeholder="Мои часы">
-                            <span><mark> &times; 0.7 <sup class="g-tooltip"> i </sup>  = 196 </mark> / 11</span>
+                        <form class='g-team__form' action=''>
+                            <input type='text' name='hours' value='' placeholder='Мои часы'>
+                            <span class='g-formula'><mark> &times; 0.7 <sup class='g-tooltip'> i </sup>  = 196 </mark> / 11</span>
                         </form>
                     </header>
-                    <div class="g-team__body">
-                        <ul class="g-team-list">
-                            <li class="g-active-user">
-                                <span>Inna</span><span>280  <mark>  196  </mark>  11</span>
+                    <div class='g-team__body'>
+                        <ul class='g-team-list'>
+                            <li class='g-team-list__item active'>
+                                <span class='g-team-list__item__name'>Inna</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>Dmitriy</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>Dmitriy</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>Vitaliy</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>Vitaliy</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>Aleksandr</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>Aleksandr</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>username</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>username</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>username</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>username</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>username</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>username</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>username</span><span>280  <mark>  196  </mark>  11</span>
+                            <li class='g-team-list__item'>
+                                <span class='g-team-list__item__name'>username</span>
+                                <ul class='g-hours-list'>
+                                    <li> 280 </li>
+                                    <li><mark> 196 </mark></li>
+                                    <li> 11 </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </aside>
             <main>
-                <div class="g-gallery">GALLERY HERE</div>
-                <section class="g-poker">
-                    <header class="g-poker__header">
-                        <span class="g-hours"><mark class="g-hours--gray-text">Количество часов: </mark> 0 / <mark> 1047</mark> <sup class="g-tooltip"> i </sup>
+                <div class='g-gallery'>GALLERY HERE</div>
+                <section class='g-poker'>
+                    <header class='g-poker__header'>
+                        <span>Количество часов: </span><span class='g-formula'> 0 / <mark> 1047</mark> <sup class='g-tooltip'> i </sup>
                         </span>
                     </header>
-                    <ul class="g-poker-list">
-                        <li class="g-poker-list__card g-wanted-task">
-                            <img src="images/card.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> Inna </span>
+                    <ul class='g-poker-list'>
+                        <li class='g-poker-list__item active'>
+                            <img src='images/card.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> Inna </span>
                         </li>
-                        <li class="g-poker-list__card ">
-                            <img src="images/card-green.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> Dmitriy </span>
+                        <li class='g-poker-list__item'>
+                            <img src='images/card-green.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> Dmitriy </span>
                         </li>
-                        <li class="g-poker-list__card">
-                            <img src="images/card-green.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> Vitaliy </span>
+                        <li class='g-poker-list__item'>
+                            <img src='images/card-green.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> Vitaliy </span>
                         </li>
-                        <li class="g-poker-list__card">
-                            <img src="images/card-green.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> Aleksandr </span>
+                        <li class='g-poker-list__item'>
+                            <img src='images/card-green.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> Aleksandr </span>
                         </li>
-                        <li class="g-poker-list__card g-wanted-task">
-                            <img src="images/card-green.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> username </span>
+                        <li class='g-poker-list__item active'>
+                            <img src='images/card-green.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> username </span>
                         </li>
-                        <li class="g-poker-list__card">
-                            <img src="images/card.jpg" alt="Poker card.">
-                            <span class="g-poker-list__username"> username </span>
+                        <li class='g-poker-list__item'>
+                            <img src='images/card.jpg' alt='Poker card.'>
+                            <span class='g-poker-list__username'> username </span>
                         </li>
                     </ul>
-                    <div class="g-poker__footer">
-                        <button class="button-green" type="button" name="show-cards">Показать карты</button>
+                    <div class='g-poker__footer'>
+                        <button class='button-green' type='button' name='show-cards'>Показать карты</button>
                     </div>
                 </section>
             </main>
         </div>
         <footer>
-            <div class="g-controls">
-                <div class="g-controls__list">
-                    <button type="button" name="button">0</button>
-                    <button type="button" name="button">1</button>
-                    <button type="button" name="button">2</button>
-                    <button type="button" name="button">3</button>
-                    <button class="g-controls__list--active" type="button" name="button">5</button>
-                    <button type="button" name="button">8</button>
-                    <button type="button" name="button">13</button>
-                    <button type="button" name="button">21</button>
-                    <button type="button" name="button">34</button>
-                    <button type="button" name="button">55</button>
-                    <button type="button" name="button">89</button>
-                    <button type="button" name="button">?</button>
-                    <input type="number" value="" placeholder="...">
-                    <button type="button" name="button"><img src="images/coffe.svg" alt="Coffe brake."></button>
-                </div>
-                <div class="g-controls__btn-holder">
-                    <button class="button-gray" type="button" name="change-master">Смена власти</button>
-                    <button class="button-red" type="button" name="finish-poker">Закончить</button>
-                </div>
-                <div></div>
+            <div class='g-controls'>
+                <button type='button' name='button'>0</button>
+                <button type='button' name='button'>1</button>
+                <button type='button' name='button'>2</button>
+                <button type='button' name='button'>3</button>
+                <button class='active' type='button' name='button'>5</button>
+                <button type='button' name='button'>8</button>
+                <button type='button' name='button'>13</button>
+                <button type='button' name='button'>21</button>
+                <button type='button' name='button'>34</button>
+                <button type='button' name='button'>55</button>
+                <button type='button' name='button'>89</button>
+                <button type='button' name='button'>?</button>
+                <input type='number' value='' placeholder='...'>
+                <button type='button' name='button'><img src='images/coffe.svg' alt='Coffe brake.'></button>
+            </div>
+            <div class='g-controls__btn-holder'>
+                <button class='button-gray' type='button' name='button'>Смена власти</button>
+                <button class='button-red' type='button' name='button'>Закончить</button>
             </div>
         </footer>
     </div>

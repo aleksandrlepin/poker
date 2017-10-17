@@ -1,6 +1,6 @@
 linters:
   PropertySortOrder:
-    order: smacss
+    order: recess
   Indentation:
     width: 4
   ColorVariable:
