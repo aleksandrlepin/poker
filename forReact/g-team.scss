@@ -1,0 +1,93 @@
+// start g-team block
+.g-team {
+    background: $gray-98;
+    border: 1px solid #ededed;
+
+    header {
+        padding: 10px 10px 5px;
+    }
+
+    mark {
+        color: $red;
+    }
+}
+
+.g-team__form {
+    font-size: rem(14);
+    line-height: 24px;
+
+    input {
+        width: 83px;
+        padding: 0 9px;
+    }
+
+    sup {
+        font-size: rem(10);
+        line-height: 14px;
+    }
+}
+
+.g-team__body {
+    padding: 0 2px 0 0;
+}
+
+.g-team-list {
+    height: 175px;
+    padding: 0 5px 0 10px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        max-width: 10px;
+        background: #ededed;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background: $blue;
+        border: solid 2px #ededed;
+        border-radius: 5px;
+    }
+
+    .g-team-list__item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px 10px 30px;
+        border-bottom: solid 1px #ededed;
+
+        &::before {
+            content: url('../images/userpic.png');
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+        }
+    }
+}
+
+.g-hours-list {
+    display: flex;
+    font-size: 11px;
+
+    li {
+        margin-left: 4px;
+        font-weight: 700;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    mark {
+        display: block;
+        font-weight: 700;
+        padding: 0 4px;
+        border-left: solid 1px $gray-80;
+        border-right: solid 1px $gray-80;
+    }
+}
+
+.g-team-list__item.active span {
+    font-weight: 700;
+}
+// end g-team block
