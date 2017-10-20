@@ -12,23 +12,26 @@
     }
 }
 
-.g-team__form {
-    font-size: rem(14);
-    line-height: 24px;
+.g-team {
 
-    input {
-        width: 83px;
-        padding: 0 9px;
+    &__form {
+        font-size: rem(14);
+        line-height: rem(24);
+
+        input {
+            width: 83px;
+            padding: 0 9px;
+        }
+
+        sup {
+            font-size: rem(10);
+            line-height: rem(14);
+        }
     }
 
-    sup {
-        font-size: rem(10);
-        line-height: 14px;
+    &__body {
+        padding-right: 2px;
     }
-}
-
-.g-team__body {
-    padding: 0 2px 0 0;
 }
 
 .g-team-list {
@@ -39,13 +42,13 @@
     &::-webkit-scrollbar {
         max-width: 10px;
         background: #ededed;
-    }
 
-    &::-webkit-scrollbar-thumb {
-        width: 8px;
-        background: $blue;
-        border: solid 2px #ededed;
-        border-radius: 5px;
+        &-thumb {
+            width: 8px;
+            background: $blue;
+            border: solid 2px #ededed;
+            border-radius: 5px;
+        }
     }
 
     &__item {
@@ -71,7 +74,7 @@
 
 .g-hours-list {
     display: flex;
-    font-size: 11px;
+    font-size: rem(11);
 
     li {
         margin-left: 4px;
