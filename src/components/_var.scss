@@ -24,7 +24,8 @@ $gray-51:             lighten($black, 51%);     //                  - #828282
 $gray-57:             lighten($black, 57%);     //                  - #919191
 $gray-60:             lighten($black, 60%);     //Dusty Gray        - #999
 $gray-80:             lighten($black, 80%);     //                  - #ccc
-$gray-98:             lighten($black, 98%);     //                  - #fafafa
+$gray-86:             lighten($black, 86%);     //                  - #dbdbdb
+$gray-98:             lighten($black, 98%);     //                  - #fafafax
 
 $green-dark:          #188500;                  //Japanese Laurel
 $green:               #1faa00;                  //Limeade
@@ -65,10 +66,10 @@ $sh-button-blue:      $sh-button-inset, 0 rem(1) 0 0 #3e647a;
 $sh-button-active:    inset 0 rem(1) rem(1) #545454;
 $sh-button-font:      0 rem(1) 0 $gray-33;
 $sh-input:            inset 0 rem(1) rem(2) $gray-80;
-$sh-input-focus:            inset 0 rem(1) rem(2) $gray-60;
+$sh-input-focus:      inset 0 rem(1) rem(2) $gray-60;
 
 $sh-button-round:     0 rem(2) 0 0 rgba(0,0,0,.05);
-$sh-avatar-hover:   0 rem(2) 0 0 rgba(0,0,0,.2);
+$sh-avatar-hover:     0 rem(2) 0 0 rgba(0,0,0,.2);
 
 // Borders:
 

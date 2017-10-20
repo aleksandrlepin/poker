@@ -1,7 +1,7 @@
 // start g-team block
 .g-team {
     background: $gray-98;
-    border: 1px solid #ededed;
+    border: 1px solid $gray-86;
 
     header {
         padding: 10px 10px 5px;
@@ -41,12 +41,12 @@
 
     &::-webkit-scrollbar {
         max-width: 10px;
-        background: #ededed;
+        background: $gray-86;
 
         &-thumb {
             width: 8px;
             background: $blue;
-            border: solid 2px #ededed;
+            border: solid 2px $gray-86;
             border-radius: 5px;
         }
     }
@@ -56,7 +56,7 @@
         display: flex;
         justify-content: space-between;
         padding: 10px 5px 10px 30px;
-        border-bottom: solid 1px #ededed;
+        border-bottom: solid 1px $gray-86;
 
         &::before {
             content: url('../images/userpic.png');
@@ -93,5 +93,4 @@
         border-right: solid 1px $gray-80;
     }
 }
-
 // end g-team block
