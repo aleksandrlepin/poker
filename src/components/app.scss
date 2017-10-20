@@ -88,7 +88,7 @@ main {
         border-radius: 5px;
     }
 
-    .g-team-list__item {
+    &__item {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -101,6 +101,10 @@ main {
             top: 5px;
             left: 0;
             display: block;
+        }
+
+        &.active .g-team-list__item__name {
+            font-weight: 700;
         }
     }
 }
@@ -142,13 +146,14 @@ main {
     border-radius: 10px;
 }
 
-.g-team-list__item.active span {
-    font-weight: 700;
-}
 
 // POKER BLOCK
 .g-formula {
     color: $black;
+
+    &__title {
+        color: $gray-50;
+    }
 
     mark {
         color: $red;
@@ -160,7 +165,6 @@ main {
     font-size: rem(16);
     font-weight: 500;
     line-height: 31px;
-    color: $gray-50;
     text-align: center;
     vertical-align: top;
 }

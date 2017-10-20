@@ -1,6 +1,10 @@
 .g-formula {
     color: $black;
 
+    &__title {
+        color: $gray-50;
+    }
+
     mark {
         color: $red;
     }

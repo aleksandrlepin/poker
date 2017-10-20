@@ -4,7 +4,6 @@
     font-size: rem(16);
     font-weight: 500;
     line-height: 31px;
-    color: $gray-50;
     text-align: center;
     vertical-align: top;
 }
@@ -47,12 +46,6 @@
 // end g-poker block
 
 // start g-controls block
-footer {
-    position: relative;
-    display: flex;
-    padding: 15px 0 11px;
-}
-
 .g-controls {
     display: flex;
     color: $gray-98;

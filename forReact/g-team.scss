@@ -48,7 +48,7 @@
         border-radius: 5px;
     }
 
-    .g-team-list__item {
+    &__item {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -61,6 +61,10 @@
             top: 5px;
             left: 0;
             display: block;
+        }
+
+        &.active .g-team-list__item__name {
+            font-weight: 700;
         }
     }
 }
@@ -87,7 +91,4 @@
     }
 }
 
-.g-team-list__item.active span {
-    font-weight: 700;
-}
 // end g-team block
