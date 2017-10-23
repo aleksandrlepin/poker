@@ -9,6 +9,10 @@
   @return #{$rems}rem;
 }
 
+body {
+    font-size: rem(12);
+}
+
 // HEADER
 .header {
     height: 91px;
@@ -17,34 +21,33 @@
 
 .g-gallery,
 .g-task-list {
-    height: 325px;
+    // height: 325px;
 }
 
 .wrapper {
-    max-width: 997px;
-    padding: 0 10px;
-    margin: 0 auto;
-    font-size: rem(12);
+    // max-width: 997px;
+    // padding: 0 10px;
+    // margin: 0 auto;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 18px;
-}
+// .content {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 18px;
+// }
 
 aside {
-    width: 32%;
+    // width: 32%;
 }
 
 main {
-    width: 68%;
-    padding: 0 10px 0 29px;
+    // width: 68%;
+    // padding: 0 10px 0 29px;
 }
 
 // FOOTER
 footer {
-    position: relative;
+    // position: relative;
     display: flex;
     padding: 15px 0 11px;
 }
