@@ -17,8 +17,8 @@
 
 .g-poker-list {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
+    justify-content: space-around;
+    margin-bottom: 19px;
 
     &__item {
         padding: 10px 10px 7px;
@@ -51,6 +51,7 @@
 // start g-controls block
 .g-controls {
     display: flex;
+    width: 64%;
     color: $gray-98;
 
     & .active {
@@ -108,7 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 36%;
 
     button {
         width: 41.5%;

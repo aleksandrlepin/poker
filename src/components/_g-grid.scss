@@ -1,0 +1,10 @@
+.g-grid {
+    display: grid;
+    grid-template-columns: 32% 66%;
+    grid-template-rows: 35.7vh 28.3vh 10.5vh;
+    grid-gap: 20px;
+}
+
+.g-grid__footer {
+    grid-column: 1 / span 2;
+}
