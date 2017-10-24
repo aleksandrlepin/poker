@@ -1,20 +1,14 @@
-@import "fonts";
-@import "var";
-@import "g-grid";
-@import "g-team";
-@import "g-poker";
-@import "g-formula";
-
-@function rem($px) {
-  $rems: $px / 16;
-  @return #{$rems}rem;
-}
+@import 'fonts';
+@import 'var';
+@import 'g-grid';
+@import 'g-team';
+@import 'g-poker';
+@import 'g-formula';
 
 body {
     font-size: rem(12);
 }
 
-// HEADER
 .header {
     height: 91px;
     background: #888;
@@ -26,9 +20,7 @@ body {
     margin: 0 auto;
 }
 
-// FOOTER
 .g-grid__footer {
-    // position: relative;
     display: flex;
     align-items: center;
 
