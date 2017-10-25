@@ -1,0 +1,103 @@
+// g-task-pagination
+.g-task-pagination {
+    min-width: 300px;
+    padding: 0 rem(2);
+    border: 1px solid $gray-86;
+    background-color: $gray-98;
+    &__footer {
+        padding: rem(5);
+        text-align: center;
+    }
+    &__holder {
+        height: 243px;
+        overflow-y: scroll;
+        border-bottom: 1px solid rgba($gray-80, .3);
+        &::-webkit-scrollbar {
+            width: 10px;
+            &-track {
+                background-color: $gray-86;
+            }
+            &-thumb {
+                border: 2px solid $gray-86;
+                border-radius: 10px;
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+// g-task-list
+.g-task-list {
+    padding: {
+        top: rem(3);
+        right: rem(2);
+    }
+    font-size: rem(12);
+    line-height: 1.2;
+    counter-reset: taskCounter;
+    li {
+        display: block;
+        position: relative;
+        padding: rem(1) 0;
+        border-bottom: 1px solid $gray-80;
+        &:last-child {
+            border-bottom: none;
+        }
+        &::before {
+            content: counter(taskCounter);
+            counter-increment: taskCounter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            line-height: rem(39);
+            text-align: center;
+        }
+        &:hover,
+        &.active {
+            a,
+            button {
+                background-color: lighten($black, 93%);
+            }
+            button {
+                display: block;
+            }
+        }
+        button {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            padding: rem(8) rem(8);
+            border: none;
+            border-radius: 0;
+            display: none;
+            background: none;
+            &:focus {
+                box-shadow: none;
+            }
+            svg {
+                height: 11px;
+                fill: $gray-80;
+            }
+        }
+        a {
+            display: flex;
+            width: 100%;
+            min-height: 37px;
+            padding: 0 rem(30);
+            align-items: center;
+            text-decoration: none;
+            color: $gray-25;
+        }
+    }
+    &__hours {
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 0;
+        width: 22px;
+        line-height: rem(37);
+        background-color: $gray-80;
+        text-align: center;
+    }
+}

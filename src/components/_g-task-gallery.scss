@@ -1,0 +1,85 @@
+// g-task-gallery
+.g-task-gallery {
+    width: 645px;
+}
+
+// g-task
+.g-task {
+    outline: none;
+    font-size: rem(14);
+    textarea {
+        width: 100%;
+        min-height: 95px;
+        padding: rem(11) rem(38);
+        color: $gray-50;
+    }
+    // g-task__desc
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+        padding-top: rem(13);
+        .details {
+            dt {
+                color: $gray-50;
+                float: left;
+                clear: left;
+                min-width: 98px;
+                box-sizing: content-box;
+                &:first-of-type {
+                    padding-right: rem(4);
+                }
+            }
+            dd {
+                margin-bottom: rem(6);
+                color: $gray-25;
+                overflow: hidden;
+                &:last-of-type {
+                    margin-bottom: rem(4);
+                }
+            }
+        }
+        select {
+            border: none;
+            outline: none;
+            vertical-align: baseline;
+            color: $blue;
+            background-color: $body-color;
+            option {
+                line-height: 40px;
+            }
+        }
+    }
+    &__section--right {
+        width: 64px;
+        input {
+            width: 100%;
+        }
+    }
+}
+
+// sliders buttons
+.b-backlog__nav,
+.slick-arrow {
+    position: absolute;
+    top: 8px;
+    width: 1.875rem;
+    height: 5rem;
+    background-position: 50%;
+    border-radius: .1875rem;
+    cursor: pointer;
+    opacity: .2;
+    z-index: 99999;
+}
+
+.b-backlog__nav--prev,
+.slick-prev {
+    left: 4px;
+    background-image: url(../images/slide-arrow.svg);
+}
+
+.b-backlog__nav--next,
+.slick-next {
+    right: 4px;
+    background-image: url(../images/slide-arrow.svg);
+    transform: rotate(180deg);
+}

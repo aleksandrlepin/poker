@@ -116,6 +116,8 @@ input[type='submit'],
   cursor: pointer;
   font-size: rem(16);
   line-height: rem(35);
+  padding: rem(10) rem(20);
+  line-height: rem(20);
   padding: 0 rem(10);
   text-align: center;
   text-shadow: $sh-button-font;
@@ -336,5 +338,43 @@ input[type='submit'],
   }
   & .offline {
     background-color: $red;
+  }
+}
+
+
+.checkbox {
+  label {
+    position: relative;
+    padding-left: 22px;
+    color: $blue;
+    &:before {
+      content: '';
+      border: 1px solid rgba($gray-50, .3);
+      border-radius: 2px;
+      width: 12px;
+      height: 12px;
+      top: 2px;
+      left: 1px;
+      position: absolute;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+    &:checked+label::before {
+        content: "";
+        background-color: $green-light;
+        border: 1px solid $green-light;
+    }
+    &:checked+label::after {
+      content: "";
+      width: 4px;
+      height: 8px;
+      border-right: 2px solid $body-color;
+      border-bottom: 2px solid $body-color;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 5px;
+      top: 3px;
+    }
   }
 }
