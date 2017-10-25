@@ -5,20 +5,24 @@
         margin-bottom: 12px;
         font-size: rem(16);
         font-weight: 500;
-        line-height: rem(31);
+        line-height: rem(34);
         text-align: center;
         vertical-align: top;
     }
 
     &__footer {
         text-align: center;
+
+        button {
+            padding: 7px 10px;
+        }
     }
 }
 
 .g-poker-list {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
 
     &__item {
         padding: 10px 10px 7px;
@@ -61,7 +65,7 @@
     button {
         width: 40px;
         margin-right: 5px;
-        padding: 9px 0 11px;
+        padding: 15px 0 15px;
         background: #5086a2;
         border-radius: 3px;
         font-size: rem(30);
@@ -114,6 +118,7 @@
     button {
         width: 41.5%;
         margin-left: 20px;
+        padding: 6px 10px;
 
         &:first-child {
             margin-left: 0;

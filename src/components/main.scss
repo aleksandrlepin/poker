@@ -1,6 +1,6 @@
 @import 'fonts';
 @import 'var';
-@import 'g-grid';
+@import 'g-main';
 @import "g-task-pagination";
 @import "g-task-gallery";
 @import 'g-team';
@@ -16,24 +16,8 @@ body {
     background: #888;
 }
 
-.wrapper {
+.g-main {
     max-width: 1016px;
-    padding: 20px;
+    padding: 20px 20px 0;
     margin: 0 auto;
-}
-
-.g-grid__footer {
-    display: flex;
-    align-items: center;
-
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        left: 0;
-        padding: 42px 0;
-        background: $gray-98;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
-    }
 }
