@@ -1,7 +1,17 @@
+body {
+    font-size: rem(12);
+}
+
+.g-main {
+    max-width: 1016px;
+    padding: 20px 20px 0;
+    margin: 0 auto;
+}
+
 .g-grid {
     display: grid;
     grid-template-columns: 1.5fr 2fr; //.95fr 1.95fr;
-    grid-template-rows: 2fr 2fr 1fr; //35.7vh 28.3vh 10.5vh;
+    grid-template-rows: 2.5fr 2fr 1fr; //35.7vh 28.3vh 10.5vh;
     grid-gap: 20px;
     height: calc(100vh - 111px);
 }
